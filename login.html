@@ -3,18 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesión - ViajesNAH</title>
+    <title>Iniciar Sesión - TravelWorld</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="login-container">
-        <div class="login-box">
-            <div class="login-header">
+    <header>
+        <h1>TravelWorld</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="form_reg.html">Registro</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <div class="form-wrapper">
+        <div class="glass-panel login-panel">
+            <div class="panel-header">
                 <h2>Bienvenido de nuevo</h2>
                 <p>Por favor, ingresa tus datos para continuar</p>
             </div>
-            <form action="#" method="POST" class="login-form">
+            <form action="#" method="POST" class="auth-form">
                 <div class="input-group">
                     <label for="email">Correo electrónico</label>
                     <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
@@ -24,18 +32,23 @@
                     <input type="password" id="password" name="password" placeholder="••••••••" required>
                 </div>
                 <div class="form-options">
-                    <label class="remember-me">
+                    <label class="custom-checkbox">
                         <input type="checkbox" name="remember">
-                        <span>Recordarme</span>
+                        <span class="checkmark"></span>
+                        <span class="label-text">Recordarme</span>
                     </label>
-                    <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                    <a href="#" class="text-link">¿Olvidaste tu contraseña?</a>
                 </div>
-                <button type="submit" class="login-button">Iniciar Sesión</button>
+                <button type="submit" class="cta-button w-full mt-4">Iniciar Sesión</button>
             </form>
-            <div class="login-footer">
-                <p>¿No tienes una cuenta? <a href="#">Regístrate aquí</a></p>
+            <div class="panel-footer mt-4">
+                <p>¿No tienes una cuenta? <a href="form_reg.html">Regístrate aquí</a></p>
             </div>
         </div>
     </div>
+
+    <footer>
+        <p>© 2026 TravelWorld</p>
+    </footer>
 </body>
 </html>

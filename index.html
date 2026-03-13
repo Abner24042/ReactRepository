@@ -2,17 +2,17 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>TravelWorld</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TravelWorld - Inicio</title>
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
 <h1>TravelWorld</h1>
 <nav>
 <a href="index.html">Inicio</a>
-<a href="registro.html">Registro</a>
+<a href="form_reg.html">Registro</a>
 <a href="login.html">Login</a>
 </nav>
 </header>
@@ -21,29 +21,33 @@
 <h2>Descubre el mundo con nosotros</h2>
 <p>Explora destinos increíbles y planea tu próxima aventura.</p>
 
-<a href="registro.html">Registrarse</a>
-<a href="login.html">Iniciar sesión</a>
+<div class="hero-buttons">
+    <a href="form_reg.html">Registrarse</a>
+    <a href="login.html">Iniciar sesión</a>
+</div>
 </section>
 
 <section class="destinos">
 <h2>Nuestros TOP 3 de destinos populares</h2>
 
-<div>
-<h3>Los Cabos</h3>
-<img src="https://escapadas.mexicodesconocido.com.mx/wp-content/uploads/2025/02/los-cabos-visita-los-cabos-facebook.jpg" width="300">
-<p>Playas hermosas y clima perfecto para vacacionar.</p>
-</div>
+<div class="cards-container">
+    <div class="destino-card">
+        <img src="https://escapadas.mexicodesconocido.com.mx/wp-content/uploads/2025/02/los-cabos-visita-los-cabos-facebook.jpg" alt="Los Cabos">
+        <h3>Los Cabos</h3>
+        <p>Playas hermosas y clima perfecto para vacacionar.</p>
+    </div>
 
-<div>
-<h3>París</h3>
-<img src="https://cdn2.civitatis.com/francia/paris/galeria/torre-eiffel-altura.jpg" width="300">
-<p>La ciudad del amor llena de cultura e historia.</p>
-</div>
+    <div class="destino-card">
+        <img src="https://cdn2.civitatis.com/francia/paris/galeria/torre-eiffel-altura.jpg" alt="París">
+        <h3>París</h3>
+        <p>La ciudad del amor llena de cultura e historia.</p>
+    </div>
 
-<div>
-<h3>Japón</h3>
-<img src="https://www.advantour.com/img/japan/images/index.jpg" width="300">
-<p>Una ciudad moderna con una cultura fascinante.</p>
+    <div class="destino-card">
+        <img src="https://www.advantour.com/img/japan/images/index.jpg" alt="Japón">
+        <h3>Japón</h3>
+        <p>Una ciudad moderna con una cultura fascinante.</p>
+    </div>
 </div>
 
 </section>
