@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Viaje</title>
+</head>
+<body>
+    <div>
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required />
+    </div>
+    
+    <div>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required />
+    </div>
+    
+    <div>
+     <label for="telefono">Télefono</label>
+    <input type="text" id="telefono" name="nombre" placeholder="833-000-000" required />
+    </div>
+
+    <div>
+    <label for="asunto">Asunto</label>
+    <select id="asunto" name="asunto" required>
+    <option value="">Selecciona una Opción</option>
+    <option value="">Compra de Vuelos</option>
+    <option value="">Información</option>
+    <option value="">Dudas</option>
+    </select>
+    </div>
+
+    <div>
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+    </div>
+    <div>
+    <input type="checkbox" id="terminos" name="terminos" required />
+    <label for="terminos">Acepto los términos y condiciones</label>
+    </div>
+    <div> <button type="submit">Enviar Formulario</button></div>
+
+    <script>
+    function enviarFormulario() {
+    alert("¡Formulario enviado correctamente!");
+    document.getElementById("miFormulario").reset();
+  }
+    </script>
+   
+
+  </form>
+</body>
+</html>
